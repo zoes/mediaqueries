@@ -1,0 +1,183 @@
+@CHARSET "UTF-8";
+
+/* Css Resets 
+-----------------------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+html, body {
+    height: 100%
+    
+}
+body {
+    font-family: "Arial", sans-serif;
+    font-size: 16px; /*All other font sizes derived at percentages */
+    line-height: 120%;
+    background-color: #fff;
+   
+}
+.black {
+	color: #000000;
+}
+.pink {
+	color: #ff3399;
+	}
+.aqua {
+	color: #7fffd4;
+	}
+.periwinkle {
+	color: #5d6db4;
+	}
+.red {
+	color: red;
+}
+.green {
+	color: #238e23;
+}
+.gold {
+	color: #dfa800;
+}
+.light-green {
+	color: #66cc33;
+}
+	
+div#wrapper {
+	background: white;
+	max-width: 1140px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 400px;
+	box-shadow: -30px 0 30px -30px #888888;
+	-webkit-box-shadow: -30px 0 30px -30px #888888;	
+}
+
+div#content {
+	padding-top: 40px;
+	color: #000000;
+	padding-left: 30px;	
+}
+h1 {
+	padding-top: 20px;
+	padding-bottom: 10px;
+	font-size: 150%;
+	font-family: serif;
+}
+
+/* Desktops and laptops up to 1280 wide. This also gets ipad and android in landscape */
+@media only screen 
+and (max-width : 1280px) {
+	 div#content {
+	    color: #66cc33;	
+	 }
+}
+
+/* Desktops and laptops between 1280 and 1823 wide */
+@media only screen 
+and (min-width : 1281px)
+and (max-width : 1823px) {
+	 div#content {
+	    color: #238e23;	
+	 }
+}
+
+/* Large screens - greater than 1824  */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+ div#content {
+    color: #dfa800;
+ }
+}
+
+
+
+/* Tablets (landscape) this is commented outbecause it tramples over all other screen widths (above) 
+@media only screen
+and (min-device-width : 768px) 
+and (max-device-width : 1280px) 
+and (orientation : landscape) {
+        div#content {
+        /*bright pink. Samsung landscape, Android landscape, iPad landsape 
+	    color: #ff3399;	
+        }
+}
+*/
+
+/* Tablets (portrait) ----------- */
+@media handheld, only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1280px) 
+and (orientation : portrait) {
+       div#content {
+       /* red Samsung portrait, Android portrait, ipad Portrait */
+	   color: red;	
+       }
+}
+
+
+/* Smartphones (landscape ) ----------- */
+/* This gets the iphone and android landscape*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 535px) {
+        div#content {
+        /*periwinkle - android portrait, iphone portrait, iphonr landscape*/
+	    color: #5d6db4;	
+        }
+}
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px)
+and (orientation : portrait) {
+       div#content {
+       /*aqua _must_ have the orientation*/
+	   color: #7fffd4;	
+       }
+}
+
+
+
+	
+

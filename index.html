@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <!--START:support non-HTML5 browsers-->
+        <!--[if lt IE 10 ]>
+        <script type="text/javascript">
+            document.createElement("nav");
+            document.createElement("header");
+            document.createElement("footer");
+            document.createElement("section");
+            document.createElement("aside");
+            document.createElement("article");
+         </script>
+        <![endif]-->
+        <!--[if !IE 7]>
+            <style type="text/css">
+                #wrapper {display:table;height:100%}
+            </style>
+        <![endif]-->
+        <!--END:support non-HTML5 browsers-->
+
+        <script type="text/javascript" src="js/jquery-1.8.0.min.js"> </script>
+         <script type="text/javascript" src="js/Width.js"> </script>
+         <link rel="stylesheet" href="css/style.css" type="text/css">
+         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        
+
+        <title>Media queries</title>
+    </head>
+
+    <body>
+    <div id="wrapper">
+        <div id="content" >
+        <h1>What media queries thinks it has</h1>
+        
+        <div  class="black">Text in this color is no known screen width</div>
+        <div  class="light-green">Desktops and laptops up to and including 1280. Tablets in landscape.</div>
+        <div  class="green">Desktops and laptops between 1281 and 1823</div>
+        <div  class="gold">Desktops and laptops greater than  1823</div>        
+        <!--  <div  class="pink">Tablets in landscape</div>-->
+        <div  class="red">Tablets in portrait</div>
+        <div  class="periwinkle">Phones (iPhone, Android)in landscape</div>
+        <div  class="aqua">Phones (iPhone, Android) in portrait</div>
+        <h1>Viewport</h1> 
+          <div id="width"></div> 
+          <div id="widthnojq"></div> 
+          <div id="wininw"></div>
+          <div id="winoutw"></div> 
+          
+          <div id="height"></div> 
+          <div id="heightnojq"></div> 
+          <div id="wininh"></div>
+          <div id="winouth"></div> 
+          
+         <h1>Device</h1> 
+          <div id="devw"></div> 
+          <div id="devaw"></div> 
+          <div id="devh"></div> 
+          <div id="devah"></div> 
+              
+        </div> <!--END: content-->
+        </div> <!--END: wrapper -->
+    </body>
+</html>
